@@ -1,0 +1,339 @@
+body {
+	background-color: rgba(29, 28, 28, 0.796);
+}
+textarea:focus,
+input:focus {
+	outline: none;
+}
+/*--------------- View News Start ---------------*/
+.newsView {
+	margin: 2% 0% 0% 5%;
+}
+/*--------------- View News End ---------------*/
+/*--------------- Create News Start ---------------*/
+.newsCreate {
+	margin: 2% 0% 0% 5%;
+}
+/*--------------- Create News End ---------------*/
+
+/*--------------- NavBar Start ---------------*/
+.adNavbar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+	border-bottom: solid white 0.5px;
+
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+/*--------------- NavBar Logo ---------------*/
+.logo-image {
+	height: 40px;
+	margin: 7px 16% 75px 50px; /*top right bottom left*/
+}
+
+/*--------------- Search Bar--------------- */
+.search-box {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+	margin-top: 5px;
+}
+.input-search {
+	height: 40px;
+	width: 40px;
+	padding-left: 15px;
+	border-style: none;
+	font-size: 18px;
+	letter-spacing: 2px;
+	outline: none;
+	border-radius: 25px;
+	transition: all 0.5s ease-out;
+	background-color: #000000;
+	padding-right: 40px;
+	color: #fff;
+}
+.input-search::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+.btn-search {
+	width: 50px;
+	height: 40px;
+	border-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50%;
+	position: absolute;
+	right: 0px;
+	color: #ffffff;
+	background-color: transparent;
+	pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+	width: 500px;
+	border-radius: 20px;
+	background-color: black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+	width: 300px;
+	border-radius: 25px;
+	background-color: black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+/*--------------- Notification Bar--------------- */
+.notification {
+	margin: initial;
+	margin: 7px;
+	margin-right: 30px;
+	width: 200px;
+	height: 40px;
+	background-color: rgb(0, 0, 0);
+	color: lavender;
+	border-radius: 25px;
+	font-size: 1.3em;
+	margin-left: auto;
+	align-items: unset;
+}
+.notification:hover {
+	color: white;
+}
+
+.notification i {
+	color: rgb(241, 241, 241);
+	margin: 14px 10px 2px 2px;
+	float: right;
+}
+.notification p {
+	float: left;
+	margin: 7px 0px 2px 15px;
+}
+/*--------------- NavBar End ---------------*/
+/*--------------- SideBar Start ---------------*/
+.adSidebar {
+	width: 55px;
+	height: 550px;
+	position: fixed;
+	left: 37px;
+	top: 65px;
+	border: solid white 0.5px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/*--------------- SideBar Icons ---------------*/
+.icon-image {
+	width: 46px;
+	height: 46px;
+	margin-top: 3px;
+	margin-left: 2px;
+}
+/*--------------- SideBar End ---------------*/
+.adContainer {
+	position: fixed;
+	left: 6%;
+	top: 12%;
+	display: flex;
+}
+/*--------------- Main Container Start -------------*/
+.adMainContiner {
+	width: 820px;
+	height: 520px;
+	border: #fff solid 0.5px;
+	color: white;
+
+	padding: 5px;
+	overflow: auto;
+	margin-left: 2%;
+}
+.adMainContiner::-webkit-scrollbar {
+	display: none;
+}
+/*--------------- Main Container End ---------------*/
+/*--------------- News Container Start -------------*/
+.adNewsPannel {
+	width: 500px;
+	height: 520px;
+	overflow: scroll;
+	margin-left: 2%;
+}
+.adNewsPannel::-webkit-scrollbar {
+	display: none;
+}
+/*--------------- News Container End ---------------*/
+/*--------------- News Create Panel Start ---------------*/
+.adCreateNews {
+	margin: 0px 20px 0px 20px;
+	padding: 0px 20px 0px 20px;
+}
+.adCreateNews .btnAddNews {
+	width: 60%;
+	margin: 10px 20% 20px 20%;
+	padding: 10px 10px 10px 10px;
+	font-size: 1em;
+	font-weight: 900;
+	color: white;
+	background-color: #009879;
+	border: none;
+	border-radius: 20px;
+}
+.newsContainer {
+	display: flex;
+}
+.adCreateNews .imageContain {
+	width: 100%;
+	font-size: 2em;
+}
+
+.adCreateNews .imgText {
+	padding: 20px;
+}
+.adCreateNews .imgPreview {
+	background: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	height: 245px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 300px;
+	border-radius: 20px;
+	box-shadow: 8px 8px 20px #aaaaaa;
+}
+.adCreateNews .textContain {
+	width: 50%;
+}
+.adCreateNews .textContain input[type="text"] {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	font-size: 20px;
+}
+.adCreateNews .textContain textarea {
+	margin-top: 15px;
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	background-color: #f8f8f8;
+	font-size: 20px;
+	height: 300px;
+}
+/*--------------- News Create Panel End ---------------*/
+/*--------------- News Component Start -----------------*/
+
+.imgContainer {
+	position: relative;
+	max-width: 470px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.styleImage {
+	display: block;
+	max-width: 470px;
+	min-width: 470px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.overlayImage {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 5px;
+	background: rgba(0, 0, 0, 0.699);
+	color: #f1f1f1;
+	width: 470px;
+	transition: 0.5s ease-in;
+	opacity: 0;
+	text-align: center;
+}
+
+.imgContainer:hover .overlayImage {
+	opacity: 1;
+}
+/*--------------- News Component End -----------------*/
+
+/*------------------Table Start------------------------*/
+.styled-table {
+	border-collapse: collapse;
+	margin: auto;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
+}
+.styled-table th,
+.styled-table td {
+	padding: 10px 8px;
+}
+.styled-table tbody tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+	border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+	font-weight: bold;
+	color: #009879;
+}
+/*------------------Table End --------------------------*/
+/*------------------Styled Button Start----------------------*/
+.button {
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px 3px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.bunEdit {
+	background-color: #1eff001c;
+	width: 50px;
+}
+.bunEdit:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 255, 0, 0.24),
+		0 17px 50px 0 rgba(145, 255, 0, 0.19);
+}
+.bunRemove {
+	background-color: #ff00001c;
+	width: 50px;
+}
+.bunRemove:hover {
+	box-shadow: 0 12px 16px 0 rgba(255, 0, 0, 0.24),
+		0 17px 50px 0 rgba(255, 0, 0, 0.19);
+}
+/*------------------Styled Button End----------------------*/
+.mainTopic {
+	text-align: center;
+	text-decoration: underline;
+}
